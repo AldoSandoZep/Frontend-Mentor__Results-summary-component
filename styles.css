@@ -1,0 +1,155 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Hanken Grotesk", sans-serif;
+	font-size: 18px;
+	height: 100vh;
+	display: flex;
+}
+
+.contenedor {
+	width: 600px;
+	/* max-width: 600px; */
+	margin: auto;
+	/* border: 1px solid; */
+	border-radius: 25px;
+	box-shadow: 10px 10px 100px hsl(221, 100%, 96%);
+	display: flex;
+}
+
+.resultado {
+	width: 50%;
+	padding: 25px;
+	color: hsla(0, 0%, 100%, 0.6);
+	text-align: center;
+	background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	border-radius: inherit;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.resultado__titulo {
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.resultado__puntaje {
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	border-radius: 50%;
+	background-image: linear-gradient(
+		hsla(256, 72%, 46%, 1),
+		hsla(241, 72%, 46%, 0)
+	);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.puntaje__aciertos {
+	font-size: 60px;
+	font-weight: 800;
+	color: hsl(0, 0%, 100%);
+}
+
+.resultado__palabra {
+	font-size: 25px;
+	font-weight: 700;
+	color: hsl(0, 0%, 100%);
+}
+
+.resumen {
+	width: 50%;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 15px;
+}
+
+.resumen__titulo {
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.resumen__bloque {
+	background-color: red;
+	font-weight: 700;
+	padding: 15px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.bloque__img {
+	margin-right: 10px;
+}
+.bloque__nombre,
+.bloque__puntaje {
+	flex-grow: 1;
+}
+
+.bloque__puntaje {
+	text-align: right;
+	color: hsla(224, 30%, 27%, 0.5);
+}
+
+.bloque__puntaje span {
+	color: hsl(224, 30%, 27%);
+}
+
+.bloque__nombre--reaction {
+	background-color: hsla(0, 100%, 67%, 0.05);
+	color: hsl(0, 100%, 67%);
+}
+
+.bloque__nombre--memory {
+	background-color: hsla(39, 100%, 56%, 0.05);
+	color: hsl(39, 100%, 56%);
+}
+
+.bloque__nombre--verbal {
+	background-color: hsla(166, 100%, 37%, 0.05);
+	color: hsl(166, 100%, 37%);
+}
+
+.bloque__nombre--visual {
+	background-color: hsla(234, 85%, 45%, 0.05);
+	color: hsl(234, 85%, 45%);
+}
+
+.resumen__boton {
+	padding: 15px;
+	color: white;
+	background-color: hsl(224, 30%, 27%);
+	font-weight: bold;
+	border: none;
+	border-radius: 30px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+@media (max-width: 600px) {
+	.contenedor {
+		width: 70%;
+		flex-direction: column;
+	}
+
+	.resultado,
+	.resumen {
+		width: 100%;
+	}
+}
+
+@media (max-width: 375px) {
+	.contenedor {
+		width: 100%;
+	}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Results summary component</title>
+		<!--ICON-->
+		<link rel="icon" href="img/favicon-32x32.ico" />
+		<!--GOOGLE FONTS-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+			rel="stylesheet" />
+		<!--CSS STYLES-->
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="contenedor">
+			<div class="resultado">
+				<h2 class="resultado__titulo">Your Result</h2>
+				<div class="resultado__puntaje">
+					<h3 class="puntaje__aciertos">76</h3>
+					<p class="puntaje__total">of 100</p>
+				</div>
+				<h4 class="resultado__palabra">Great</h4>
+				<p class="resultado__comentario">
+					You scored higher than 65% of the people who have taken these tests.
+				</p>
+			</div>
+			<div class="resumen">
+				<h2 class="resumen__titulo">Summary</h2>
+				<div class="resumen__bloque bloque__nombre--reaction">
+					<img class="bloque__img" src="img/icon-reaction.svg" alt="" />
+					<p class="bloque__nombre">Reaction</p>
+					<p class="bloque__puntaje"><span>80 </span>/ 100</p>
+				</div>
+				<div class="resumen__bloque bloque__nombre--memory">
+					<img class="bloque__img" src="img/icon-memory.svg" alt="" />
+					<p class="bloque__nombre">Memory</p>
+					<p class="bloque__puntaje"><span>92 </span>/ 100</p>
+				</div>
+				<div class="resumen__bloque bloque__nombre--verbal">
+					<img class="bloque__img" src="img/icon-verbal.svg" alt="" />
+					<p class="bloque__nombre">Verbal</p>
+					<p class="bloque__puntaje"><span>61 </span>/ 100</p>
+				</div>
+				<div class="resumen__bloque bloque__nombre--visual">
+					<img class="bloque__img" src="img/icon-visual.svg" alt="" />
+					<p class="bloque__nombre">Visual</p>
+					<p class="bloque__puntaje"><span>72 </span>/ 100</p>
+				</div>
+				<button class="resumen__boton" type="submit">Continue</button>
+			</div>
+		</div>
+	</body>
+</html>
